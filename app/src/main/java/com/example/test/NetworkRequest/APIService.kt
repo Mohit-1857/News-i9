@@ -34,17 +34,4 @@ interface APIService {
          @Query("apiKey") apiKey:String="API_KEY"
      ) : Call<NewsResponse>
 
-//    companion object{
-//        var apiService : APIService?= null
-//        fun getInstance() : APIService{
-//            if(apiService == null){
-//                apiService = Retrofit.Builder()
-//                    .baseUrl("https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=")
-//                    .addConverterFactory(GsonConverterFactory.create())
-//                    .build().create(APIService::class.java)
-//            }
-//            return apiService!!
-//        }
-//    }
-
 }
