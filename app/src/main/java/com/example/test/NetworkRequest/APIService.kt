@@ -24,14 +24,14 @@ interface APIService {
         @Query("page") page: Int =1,
         //@Query("language") language:String="he",
         @Query("category") category: String = "",
-        @Query("apiKey") apiKey:String="c7bd4787bfd746f681c7680919415a2b"
+        @Query("apiKey") apiKey:String="API_KEY"
 
     ) : Call<NewsResponse>
 
 
      @GET("everything")
      fun getEveryNews(
-         @Query("apiKey") apiKey:String="c7bd4787bfd746f681c7680919415a2b"
+         @Query("apiKey") apiKey:String="API_KEY"
      ) : Call<NewsResponse>
 
 //    companion object{
